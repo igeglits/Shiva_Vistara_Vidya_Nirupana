@@ -49,9 +49,6 @@ public class CalculatePrimePlus3 {
     public static int addThreeAndReturn(int num) {
         return num + 3;
     }
-
-    // Метод для получения суммы цифр числа. Отрезает каждое поледнюю цифру числа и скидывает его в сумму,
-    // единичное число сбрасывает без отрезания.
     private static int getDigitSum(int num) {
         int sum = 0;
         while (num != 0) {
