@@ -1,24 +1,26 @@
-public class CalculatePriePlus3 {
+public class CalculatePrimePlus3 {
 
     public static void main(String[] args) {
-        int num1 = 4;
-        int num2 = 67890;
-        int num3 = 11111;
-        int num4 = 98765;
-        int num5 = 54321;
-        int num6 = 24680;
-        int num7 = 13579;
-        int num8 = 99999;
-        int num9 = 88888;
+        int num1 = 9;
+        int num2 = 9;
+        int num3 = 9;
+        int num4 = 9;
+        int num5 = 9;
+        int num6 = 9;
+        int num7 = 9;
+        int num8 = 9;
+        int num9 = 9;
 
         // Вызов метода processInput для получения суммы единичных чисел
         int sumOfSingleDigits = processInput(num1, num2, num3, num4, num5, num6, num7, num8, num9);
 
         // Вызов метода addThreeAndReturn для добавления 3 к сумме единичных чисел
+        System.out.print("Первое число = ");
+        System.out.println(sumOfSingleDigits);
         int finalResult = addThreeAndReturn(sumOfSingleDigits);
 
         // Вывод результата
-        System.out.println("Результат: " + finalResult);
+        System.out.println("Второе число = " + finalResult);
     }
 
     // Метод для обработки входных чисел и получения суммы единичных чисел
@@ -35,7 +37,7 @@ public class CalculatePriePlus3 {
         }
 
         // Повторение процедуры, пока сумма не станет однозначным числом
-        while (sum >= 10) {
+        while (sum > 81) {
             sum = getDigitSum(sum);
         }
 
